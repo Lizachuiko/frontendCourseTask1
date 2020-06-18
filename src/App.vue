@@ -4,9 +4,9 @@
         span Начните вводить название телефона:
         search(
           :searching-function="chooseIPhoneF"
-          @iphone-chosen="setImage()"
+          @value-selected="choiceMade = true"
         )
-        img(v-if="choiceMade" src="#" alt="фото айфона")
+        img(v-if="choiceMade" src="./assets/iphone.png" alt="фото айфона")
 </template>
 
 <script lang="ts">

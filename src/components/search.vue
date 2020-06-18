@@ -10,7 +10,12 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { Suggestion } from '../services/search';
+
+interface Suggestion {
+  title: string;
+  additionalInfo?: string;
+  price?: number;
+}
 
 @Component
 export default class Search extends Vue {
